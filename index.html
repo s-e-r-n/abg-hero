@@ -141,22 +141,24 @@
       }
 
       .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 14px;
+        display: block;
         font-size: clamp(12px, 1.1vw, 15px);
         font-weight: 400;
-        letter-spacing: 0.26em;
+        letter-spacing: 0.18em;
         text-transform: uppercase;
         color: #fff;
         margin-bottom: clamp(20px, 2.4vw, 32px);
+        padding-left: 54px;
+        position: relative;
       }
       .eyebrow::before {
         content: "";
+        position: absolute;
+        left: 0;
+        top: 0.65em;
         width: 40px;
         height: 2px;
         background: var(--yellow);
-        display: inline-block;
       }
 
       /* ---------- Headline + Webflow-style mask reveal ---------- */
