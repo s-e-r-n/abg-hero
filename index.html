@@ -48,6 +48,23 @@
         overflow: hidden;
       }
 
+      /* ---------- Logo overlay ---------- */
+      .hero__logo-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+      }
+      .hero__logo-overlay img {
+        width: 100%;
+        height: auto;
+        opacity: 0.25;
+        mix-blend-mode: overlay;
+      }
+
       /* ---------- Background video ---------- */
       .hero__bg {
         position: absolute;
@@ -327,6 +344,10 @@
         <video autoplay muted loop playsinline>
           <source src="assets/lake-city.webm" type="video/webm" />
         </video>
+      </div>
+
+      <div class="hero__logo-overlay">
+        <img src="assets/logo-abg-white.svg" alt="" aria-hidden="true" />
       </div>
 
       <header class="header">
